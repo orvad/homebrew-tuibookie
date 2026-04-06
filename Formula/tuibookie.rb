@@ -1,20 +1,20 @@
 class Tuibookie < Formula
   desc "A fast, interactive terminal bookmark manager for CLI commands"
   homepage "https://github.com/orvad/tuibookie"
-  version "1.7.0"
+  version "1.7.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/orvad/tuibookie/releases/download/v1.7.0/tuibookie-darwin-arm64"
-      sha256 "b7b96e95dbfbbfdf86dcc0af2cd2d279c69c1b6368fdbd3ded1ed597ffcc82f2"
+      url "https://github.com/orvad/tuibookie/releases/download/v1.7.1/tuibookie-darwin-arm64"
+      sha256 "eb16ec9e222b34cdc577519d26e7813b0228b73e0d066a480a5560909c5abfe8"
 
       def install
         bin.install "tuibookie-darwin-arm64" => "tuibookie"
       end
     else
-      url "https://github.com/orvad/tuibookie/releases/download/v1.7.0/tuibookie-darwin-amd64"
-      sha256 "8dfde7aced95466f3c4ddc488b478af3d338ca09f7dc50868776a284724d75db"
+      url "https://github.com/orvad/tuibookie/releases/download/v1.7.1/tuibookie-darwin-amd64"
+      sha256 "8765019cfea4be8cba2c45da9c89d24a3b5403d54ef7472d472dd2080941e65d"
 
       def install
         bin.install "tuibookie-darwin-amd64" => "tuibookie"
@@ -24,15 +24,15 @@ class Tuibookie < Formula
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/orvad/tuibookie/releases/download/v1.7.0/tuibookie-linux-arm64"
-      sha256 "1d15a73c3fdc15da0e2e801d20b699cd6164540ff1e0fd8d0b945ecec014d500"
+      url "https://github.com/orvad/tuibookie/releases/download/v1.7.1/tuibookie-linux-arm64"
+      sha256 "47d06313b3af3f449054f6c332d1d6504eac6cf736f630adefd7dd115c3eb65b"
 
       def install
         bin.install "tuibookie-linux-arm64" => "tuibookie"
       end
     else
-      url "https://github.com/orvad/tuibookie/releases/download/v1.7.0/tuibookie-linux-amd64"
-      sha256 "f2179ebf8789a40e270269bd834c653291aaecd2981e46427469ccb09b8a6764"
+      url "https://github.com/orvad/tuibookie/releases/download/v1.7.1/tuibookie-linux-amd64"
+      sha256 "da976f21abf8c6dc4ce85607b8a56a1a0f253c83499bdfc855ed5fe8e8c436ee"
 
       def install
         bin.install "tuibookie-linux-amd64" => "tuibookie"
